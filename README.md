@@ -1,58 +1,59 @@
-# Our Little Story — Proposal Website
+# Aamer ♥ Shaista — Complete Romantic Proposal Website
 
-This is a complete, mobile-friendly static proposal website. It contains a cute introduction, memories timeline, reasons-you-love-her cards, a funny compatibility score, mini quiz, typed love letter, proposal screen, moving **No** button, and a confetti celebration page.
+## Included features
+- Welcome screen and five-step romantic loading screen
+- Soft falling hearts and sparkle background
+- Built-in optional “our song” sound button
+- Timeline, envelope-opening reasons, compatibility report, and quiz
+- Wrong quiz answer = ❌ effect; correct answer = 🥰 effect
+- Typewriter love letter
+- No button stays inside the proposal button section, runs farther away, displays messages, and makes Yes pulse stronger
+- Separate Yes celebration page with confetti and Aamer’s name
 
-## 1. Test it first
-1. Extract this ZIP file.
-2. Open the extracted folder.
-3. Double-click `index.html` (or open it in Chrome).
-4. Test the journey and click **Yes, forever!**.
+## Test it first
+1. Extract the ZIP.
+2. Keep every file in the same folder.
+3. Open `index.html` in Chrome or another browser.
+4. Tap **Open my heart** and test every section.
 
-## 2. Personalize it before deploying
-Use any text editor (VS Code, Notepad++, or even a phone code editor). Search and replace these words:
+## Change content
+Edit using VS Code, Notepad++, or a phone code editor.
+- `index.html`: names, timeline, envelope messages, question, and proposal text.
+- `script.js`: loading lines (`loadMessages`), No-button messages (`words`), and the personal letter (`const text`).
+- `yes.html`: celebration message and signature.
 
-- `YOUR NAME` — your name, in `index.html` and `yes.html`.
-- `My Love` — her name or special nickname, in `index.html`.
-- The four timeline memories in `index.html`.
-- The six reason cards in `index.html`.
-- The letter text inside `script.js`, starting with `const letter=`.
-
-### Add your photos (optional)
-1. Put an image like `our-photo.jpg` in the same folder as `index.html`.
-2. In `index.html`, replace the whole line beginning `<div class="hero-art">` and ending `</div>` with:
-
+## Add your own photo
+1. Put an image such as `our-photo.jpg` beside `index.html`.
+2. In `index.html`, replace the complete `<div class="moon-art"> ... </div>` section with:
 ```html
-<div class="hero-art"><img src="our-photo.jpg" alt="A memory of us" style="width:100%;height:100%;object-fit:cover"></div>
+<div class="moon-art"><img src="our-photo.jpg" alt="Aamer and Shaista" style="width:100%;height:100%;object-fit:cover"></div>
 ```
+3. Upload the photo with the other files. Image filename spelling must match exactly.
 
-Use only photos you both are comfortable sharing. Keep photos reasonably small (under about 2 MB) for faster mobile loading.
+## Use a real background song
+This project includes a small browser-generated melody; it starts only when the visitor presses the music button. To use your own royalty-free or personally owned MP3 later, add `our-song.mp3` to the folder and ask a developer to replace the Web Audio section in `script.js` with an HTML audio player. Do not upload copyrighted music unless you have permission.
 
-## 3. Deploy with GitHub Pages
-1. Sign in at GitHub and choose **New repository**.
-2. Name it something private-looking, such as `little-moon-story`.
-3. Upload the **files inside this extracted folder**: `index.html`, `yes.html`, `style.css`, `script.js`, `yes.js`, and this README. Do not upload the ZIP itself.
-4. Ensure `index.html` is at the repository root, not inside another folder.
-5. Open the repository’s **Settings** tab → **Pages**.
-6. Under **Build and deployment**, choose **Deploy from a branch**.
-7. Select branch **main** and folder **/(root)**, then press **Save**.
-8. Wait a few minutes. The Pages screen will show your published URL in this format:
-   `https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY-NAME/`
-9. Open the URL on your phone before sharing it.
+## Deploy to GitHub Pages
+1. Create a new GitHub repository, for example `aamer-shaista-story`.
+2. Upload the files inside this extracted folder: `index.html`, `yes.html`, `style.css`, `script.js`, `yes.js`, and `README.md`. Do not upload the ZIP as the website itself.
+3. Ensure `index.html` is in the repository root, not inside an extra subfolder.
+4. Open repository **Settings** → **Pages**.
+5. Under Build and deployment, choose **Deploy from a branch**.
+6. Select branch `main` and folder `/(root)`, then press Save.
+7. Wait a few minutes. GitHub shows the exact public URL in Settings → Pages.
+8. Test the URL on your phone before sending it.
 
-## 4. Make changes after deployment
-1. Open the GitHub repository.
-2. Click the file you want to edit, such as `index.html`.
-3. Click the pencil/edit icon.
-4. Make the change and choose **Commit changes**.
-5. Wait a short time, then refresh your website. GitHub Pages republishes the updated version automatically.
+## Change after deployment
+1. Open your GitHub repository.
+2. Open a file and click the pencil/Edit icon.
+3. Save using **Commit changes**.
+4. Wait 1–3 minutes and refresh the webpage.
 
-For bigger edits: change files on your laptop, then upload the replacement files to the same repository.
+## Troubleshooting
+- **404/blank site:** `index.html` must be at the selected publishing root.
+- **Changes not visible:** wait a few minutes, hard refresh, or open incognito.
+- **Image absent:** confirm the image name and capitalization match exactly.
+- **No music:** press the music button; browsers block audio until a person interacts with the page.
 
-## 5. Troubleshooting
-- **Site does not open:** Confirm GitHub Pages is enabled and you are using the exact URL displayed in Settings → Pages.
-- **404 / blank page:** Ensure `index.html` is in the selected root folder.
-- **Photo missing:** Check image spelling and uppercase/lowercase exactly match. Upload the image to the same folder.
-- **Changes not visible:** Wait 1–3 minutes and hard-refresh the browser.
-
-## Important
-The No button is intentionally playful. The real point is the personal message and the Yes path. Keep the final proposal kind, respectful, and personal.
+## Privacy
+Use only photos, music, and messages that both of you are comfortable sharing. Keep the final URL private until the proposal moment.
